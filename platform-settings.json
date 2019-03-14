@@ -1,0 +1,19 @@
+{
+	"PlatformSettingsConfig": {
+		"AdministratorUserSettings": {
+			"InitialPassword": "trUf6yuz2?_Gub"
+		},
+                "LicensingConnectionSettings":{
+                         "username":"PTC Support site user name",
+                         "password":"PTC Support site password"
+	},
+	"PersistenceProviderPackageConfigs": {
+		"PostgresPersistenceProviderPackage": {
+			"ConnectionInformation": {
+				"jdbcUrl": "jdbc:postgresql://localhost:5432/thingworx",
+				"password": "twadmin",
+				"username": "twadmin"
+			}
+		}
+	}
+}

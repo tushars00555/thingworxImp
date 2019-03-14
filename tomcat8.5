@@ -1,0 +1,18 @@
+CATALINA_HOME=/usr/share/tomcat8.5/8.5.13
+case $1 in
+start)
+/bin/su -p -s /bin/sh tomcat8.5 $CATALINA_HOME/bin/startup.
+sh
+;;
+stop)
+/bin/su -p -s /bin/sh tomcat8.5 $CATALINA_HOME/bin/
+shutdown.sh
+;;
+restart)
+/bin/su -p -s /bin/sh tomcat8.5 $CATALINA_HOME/bin/
+shutdown.sh
+/bin/su -p -s /bin/sh tomcat8.5 $CATALINA_HOME/bin/startup.
+sh
+;;
+esac
+exit 0
